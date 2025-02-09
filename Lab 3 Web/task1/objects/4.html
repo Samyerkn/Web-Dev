@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script>
+//1. Write the code, one line for each action:
+
+// Create an empty object user.
+// Add the property name with the value John.
+// Add the property surname with the value Smith.
+// Change the value of the name to Pete.
+// Remove the property name from the object.
+
+// let person={
+//     age: "18",
+//     name:"John",
+//     surname : "Smith"
+// }
+// person.name="Pete";
+// delete person.name;
+
+
+
+// let schedule = {};
+
+// alert( isEmpty(schedule) ); // true
+
+// schedule["8:30"] = "get up";
+
+// alert( isEmpty(schedule) ); // false
+
+
+
+//2.  
+// function isEmpty(obj) {
+//   for (let key in obj) {
+//     // if the loop has started, there is a property
+//     return false;
+//   }
+//   return true;
+// }
+
+
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+};
+
+let sum = 0;
+for (let key in salaries) {
+  sum += salaries[key];
+}
+
+alert(sum); // 390
+
+
+
+//3
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == 'number') {
+      obj[key] *= 2;
+    }
+  }
+}
+</script>
+</body>
+</html>

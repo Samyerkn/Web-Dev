@@ -1,0 +1,36 @@
+.container{
+    max-width: 1200px;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categories ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.categories li{
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.categories li:hover{
+    background-color: #e0e0e0;
+}
+
+.categories li.selected{
+    background-color: #007bff;
+    color: #fff;
+}

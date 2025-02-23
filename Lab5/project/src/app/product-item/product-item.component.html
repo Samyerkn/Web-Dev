@@ -1,0 +1,13 @@
+<div class="product-item">
+    <img [src]="product.image" alt="{{ product.name }}">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>⭐ {{ product.rating }}</p>
+    <p>Likes {{ product.likes }} 👍</p>
+    
+    <button (click)="likeProduct()"> Like ❤️</button>
+    <button (click)="shareOnWhatsApp()">📱 Share on WhatsApp</button>
+    <button (click)="shareOnTelegram()">📩 Share on Telegram</button>
+    <button (click)="removeProduct()">❌ Remove</button>
+
+</div>

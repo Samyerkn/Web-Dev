@@ -1,0 +1,17 @@
+<div class = "container">
+  <h1>Product Categories</h1>
+  <div class="categories">
+    <ul>
+      <li *ngFor="let category of categories"
+      (click) = "selectCategory(category)"
+      [class.selected] = "selectedCategory === category">
+      {{ category.name }}
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedCategory">
+    <h2>{{ selectedCategory.name }} Products</h2>
+    <app-product-list [products] = "selectedCategory.products"></app-product-list>
+  </div>
+</div>

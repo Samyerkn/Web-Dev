@@ -1,0 +1,9 @@
+<div>
+    <h2>Album Details</h2>
+    <p>ID: {{album?.id}}</p>
+    <p>User ID: {{album?.userId}}</p>
+    <input [(ngModel)] = "album?.title" />
+    <button (click)="saveAlbum()">Save</button>
+    <button (click)="router.navigate(['/albums'])">Return</button>
+    <button (click)="goToPhoto()">Photos</button>
+</div>
